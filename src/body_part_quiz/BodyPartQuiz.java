@@ -1,4 +1,6 @@
+
 package body_part_quiz;
+
 
 /*
  *    Copyright (c) The League of Amazing Programmers 2013-2019
@@ -17,6 +19,8 @@ import javax.swing.JPanel;
 
 public class BodyPartQuiz {
 
+	
+
 	// You can use the celebrity photos we have placed in the default java
 	// package,or if you prefer, get celebrity photos from the Internet,
 	// place them in the default package, and change the names below.
@@ -28,7 +32,10 @@ public class BodyPartQuiz {
 
 	JFrame window = new JFrame();
 	JPanel panel = new JPanel();
-
+	public static void main(String[] args) {
+		new BodyPartQuiz().run();
+	
+	}
 	public void run() {
 		initializeGui();
 		startQuiz();
@@ -42,7 +49,7 @@ public class BodyPartQuiz {
 
 		// 3. Change the size of the window so that you can only see part of the
 		// image.
-		window.setSize(500, 500);
+		window.setSize(250, 100);
 
 		showNextImage();
 
@@ -51,7 +58,9 @@ public class BodyPartQuiz {
 	private void startQuiz() {
 
 		// 1. Make an int variable to hold the score.
-
+int score = 5;
+String bob="Bob";
+String bOb = "BOB";
 		// 2. Set the size of the window in the initializeGui() method 
 
 		// 4. Ask the user who this person is and store their answer
@@ -59,13 +68,84 @@ public class BodyPartQuiz {
 
 		// 5. Check their answer. If they guessed correctly:
 		// -- Tell them they are right and increase the score by 1
-
+if(guess.equals(bob) || guess.equals(bOb) ) {
+	JOptionPane.showMessageDialog(null, "you very epic gamer man");
+}
 		// 6. Otherwise:
 		// -- Tell them they are wrong and who the person is
-
+else {
+	JOptionPane.showMessageDialog(null, "you wrong I deleted you fortnite account");
+}
 		// 7. Use the showNextImage() method below to get the next image
 		showNextImage();
-
+bob = "BOB";
+guess = JOptionPane.showInputDialog("who is this?");
+		if(guess.equals(bob) || guess.equals(bOb) ) {
+			JOptionPane.showMessageDialog(null, "you very epic gamer man");
+		}
+				// 6. Otherwise:
+				// -- Tell them they are wrong and who the person is
+		else {
+			JOptionPane.showMessageDialog(null, "you wrong I deleted you fortnite account");
+		}
+				// 7. Use the showNextImage() method below to get the next image
+				showNextImage();
+				
+				if(guess.equals(bob) || guess.equals(bOb) ) {
+					JOptionPane.showMessageDialog(null, "you very epic gamer man");
+				}
+						// 6. Otherwise:
+						// -- Tell them they are wrong and who the person is
+				else {
+					JOptionPane.showMessageDialog(null, "you wrong I deleted you fortnite account");
+				}
+						// 7. Use the showNextImage() method below to get the next image
+						showNextImage();
+				bob = "BOb";
+				guess = JOptionPane.showInputDialog("who is this?");
+						if(guess.equals(bob) || guess.equals(bOb) ) {
+							JOptionPane.showMessageDialog(null, "you very epic gamer man");
+						}
+								// 6. Otherwise:
+								// -- Tell them they are wrong and who the person is
+						else {
+							JOptionPane.showMessageDialog(null, "you wrong I deleted you fortnite account");
+						}
+								// 7. Use the showNextImage() method below to get the next image
+								showNextImage();
+								
+										// 7. Use the showNextImage() method below to get the next image
+										showNextImage();
+								bob = "BoB";
+								guess = JOptionPane.showInputDialog("who is this?");
+										if(guess.equals(bob) || guess.equals(bOb) ) {
+											JOptionPane.showMessageDialog(null, "you very epic gamer man");
+										}
+												// 6. Otherwise:
+												// -- Tell them they are wrong and who the person is
+										else {
+											JOptionPane.showMessageDialog(null, "you wrong I deleted you fortnite account");
+										}
+												// 7. Use the showNextImage() method below to get the next image
+												showNextImage();
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		// 8. .... repeat 4-7 for all your images.....
 
 		// 9. Show them their current score
